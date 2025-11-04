@@ -2681,6 +2681,8 @@ def aks_agentpool_add(
     gpu_driver=None,
     # static egress gateway - gateway-mode pool
     gateway_prefix_size=None,
+    # local DNS
+    localdns_config=None,
 ):
     # DO NOT MOVE: get all the original parameters and save them as a dictionary
     raw_parameters = locals()
@@ -2741,6 +2743,8 @@ def aks_agentpool_update(
     # etag headers
     if_match=None,
     if_none_match=None,
+    # local DNS
+    localdns_config=None,
 ):
     # DO NOT MOVE: get all the original parameters and save them as a dictionary
     raw_parameters = locals()
